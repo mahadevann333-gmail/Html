@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Core Flexbox Differences */
+.flex-container {
+  display: flex;
+  background-color: #e0f2fe; /* Light Blue */
+  border: 2px solid #0284c7;
+  gap: 10px;
+  padding: 10px;
+}
+
+.inline-flex-container {
+  display: inline-flex;
+  background-color: #dcfce7; /* Light Green */
+  border: 2px solid #16a34a;
+  gap: 10px;
+  padding: 5px 10px;
+  vertical-align: middle; /* Aligns container neatly with text */
+}
+
+/* Identical child styles */
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Example 1: display: flex -->
+<h3>Display: Flex (Block-level behavior)</h3>
+<p>The blue container below takes up 100% width and pushes next content down.</p>
+<div class="flex-container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+<p>This paragraph appears on a new line below the flex container.</p>
+
+<hr>
+
+<!-- Example 2: display: inline-flex -->
+<h3>Display: Inline-Flex (Inline behavior)</h3>
+<p>
+  The green container sits 
+  <div class="inline-flex-container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+  directly inside the paragraph text, wrapping snugly around its content.
+</p>
+
+</body>
+</html>

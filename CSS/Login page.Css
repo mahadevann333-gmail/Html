@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+ * {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+ }
+ body{
+    margin: 0px;
+    padding: opx;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+
+ .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: white;
+
+ }
+ h1 {
+    color:red ;
+ }
+
+ .page {
+    background: linear-gradient( to bottom,
+    rgb( 191 204 245 / 76%),
+    rgb(242 198 156 / 52%)
+    
+    );
+ }
+ .page {
+    width: 50%;
+    height: 100%;
+
+ }
+ .login box {
+    
+ }
