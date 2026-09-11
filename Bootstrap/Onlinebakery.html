@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+       <!-- Bootstrap -->
+        <div class="Container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-lg-3">
+                     <div class="card">
+                         <div class="card body"></div>
+
+                           <h2 class="text-center"> Bakery Feedback Form</h2><br><br>
+                             <!-- Customer DName-->
+                         <form>
+                             <div class="mb-3">
+                                <label for="Name" class="form-label">Name</label>
+                                <input type="Name" class="from-control" id="Name" placeholder="Enter your Name">
+                             </div>
+                                
+                              <div class="mb-3">
+                                <label for="Email" class="form-label">Email Address</label>
+                                <input type="Email" class="from-control" id="Email" placeholder="Enter your Email" required>
+                             </div>
+
+                                <div class="mb-3">
+                                <label for="feedback" class="form-label">Feedback Message</label>
+                                <textarea class="form-control" id="feedback" rows="4" placeholder="Write your feedback here"></textarea>
+                            </div>
+                         <!-- Preferred Contact Method -->
+                               <div class="mb-3">
+                                    <label class="form-label">Preferred Contact Method</label>
+                               </div>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="contact" id="contactEmail" value="Email">
+                                    <label class="form-check-label" for="contactEmail">
+                                        Email
+                                    </label>
+                                 </div>
+                                   <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="contact" id="contactPhone" value="Phone">
+                                    <label class="form-check-label" for="contactPhone">Phone</label>
+                                   </div>
+
+                                     <!-- satisfaction level -->
+                                      <div class="mb-3">
+                                         <label class="form-label">satisfaction level (1-10)</label>
+                                         <input type="range" class="form-range" id="satisfaction" min="1" max="1o" value="5">
+                                      </div>
+
+                                       <div class="mb-4">
+                                          <label for="orderType" class="form-label">Type of Order</label>
+                                                <select class="form-select" id="orderType">
+                                              <option selected>Select your order type</option>
+                                             <option value="Cake">Cake</option>
+                                           <option value="Cookies">Cookies</option>
+                                          <option value="Pastries">Pastries</option>
+                                       </select>
+                                       </div>
+                                        
+                                       <!-- Submit Button -->
+                            
+                                <button type="submit" class="btn btn-primary">
+                                    Submit Feedback
+                                </button>
+                            
+                         </form>
+
+                     </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
