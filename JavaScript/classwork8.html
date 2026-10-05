@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+           let product =parseInt(prompt("Enter a product :"));
+           let Quantity =parseInt(prompt("Enter a Quantity:"));
+             for(let i=1; i<=5;i++){
+           switch(code){
+            case 1:
+                product="Apple";
+                price=30;
+                break;
+               
+            case 2:
+                product="Banana";
+                price=10;
+                break;
+
+            case 3:
+                product="Mango";
+                price=50;
+                break; 
+                
+                default:
+                    console.log("invalid product code.");
+                    continue;
+           }
+
+            let total=price*Quantity;
+
+            console.log("product:" +product);
+            console.log("totalprice: $" +total);
+
+              if(total>100){
+                console.log("high purchase"); 
+              }
+              else{
+                console.log("normal purchase");
+              }
+            } 
+    </script>
+</body>
+</html>

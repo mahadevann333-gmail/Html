@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1" onsubmit="return myFunction()">
+        <input type="text" id="textInput" placeholder="Enter text" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="userinput"  onmouseover="mOver(this)" onmouseout="mOut(this)"></p>
+    <script>
+         let form =document.forms["form1"];
+         let input =document.getElementById("textInput");
+          function myFunction(){
+            document.getElementById("userinput").innerHTML=input.value;
+            return false;
+          }
+
+          function mOver(obj) {
+  obj.style.color="green"
+
+
+          }
+function mOut(obj) {
+  obj.style.color="blue"
+}
+   
+    </script>
+          
+</body>
+</html>

@@ -6,29 +6,121 @@
     <title>Document</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .scroll{
+        height: 100vh;
+        overflow-y: auto;
+    }
+</style>
 <body>
-     <nav class="navbar navbar-expand-sm bg-light">
+    
+     <nav class="navbar navbar-expand-sm  justify-content-center">
            <ul class="navbar-nav">
              <li class="nav-item">
-                <a href="#" class="navbar-brand"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfFp7J22QAoxUfm9A_fkzpR5VbbZZ06ZVQTSLD_rwKp0A5_lff3Lqy3c&s=10" width="10%">Mashupstack</a>
+                <a href="#" class="navbar-brand pl-5"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhd9kX3SZ89hO84O-tdjKMJytHKKiAlt9Pc0rzdJoyA&s=10" width="40%"></a>
              </li>
            </ul>
              <ul class="navbar-nav">
                 <li class="navbar-item">
-                       <a href="#" class="nav-link text-dark">Evaluation</a>
+                       <a href="#" class="nav-link text-dark pl-5">EVALUATION</a>
                 </li>
              </ul>
               <ul class="navbar-nav">
                   <li class="navbar-item">
-                      <a href="#" class="nav-link text-dark">Placement</a>
-                       
+                      <a href="#" class="nav-link text-dark pl-4">PLACEMENT</a>
+                      
                   </li>
               </ul>
 
+           <ul class="navbar-nav">
+               <li class="navbar-item">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-outline-light text-dark pl-4" data-toggle="dropdown">INTERVIEW</button>
+                      <div class="dropdown-menu">
+                         <a class="dropdown-item" href="#">View Resume</a>
+                         <a class="dropdown-item" href="#">Tech Interview</a>
+                         <a class="dropdown-item" href="#">HR Interview</a>
+                         <a class="dropdown-item" href="#">Revision Interview</a>
+                      </div>
+                   </div>
+               </li>
+           </ul>
+                 
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-light text-dark pl-4" data-toggle="dropdown">LEARN</button>
+                             <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Courses</a>
+                                      
+                               
+                             </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                  <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link text text-dark pl-4" class="btn dropdown-toggle" data-toggle="dropdown">ANALYTICS</a>
+                             <div class="dropdown-menu">
+                                   <a href="#" class="btn  dropdown-toggle" data-toggle="dropdown"></a>
+                                      <a class="dropdown-item" href="#">Leaderboard</a>
+                                      
+                               
+                             </div>
+                        </div>
+                    </li>
+                      <li class="nav-item">
+                           <a href="#" class="nav-link"><i class="fas fa-moon text-dark "></i></a>
+                      </li>
+                </ul>
+            </div>    
+                
      </nav>
+              
+             <div class="Container-fluid">
+                <div class="row">
+                      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 scroll">
+                             <ul class="nav flex-column">
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Introduction</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Text Editors and IDE</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Installing VS Code</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Hello World - Your First HTML Page</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Headings</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Paragraphs</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Links</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Images</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Unordered Lists</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Ordered Lists</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Definition List</a></button></li>
+                                
+                             </ul>
+                      </div>
 
+                      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 scroll">
+                          <h2 class="mt-5 " style="color: blueviolet;">What is bootstrap?</h2><br><br>
+                          <img src="https://www.mashupstack.com//assets/uploads/image-upload/da49d4dce6a20e91848c2200bb690da5.jpg" alt="bootstrap" class="img-thumbnail" width="600px" height="350px"><br><br><br><br>
+                          <p style="font-size: large;">Bootstrap is an open-source and front end framework. This framework helps in faster web development and support developers in creating responsive web pages at a quicker pace.</p>
+                          <p style="font-size: large;">Bootstrap provides the basic structure of HTML and CSS with predefined classes, which help you to build functionality quickly and easily with device responsiveness.</p>
+                          <p style="font-size: large;">Thus, It saves plenty of time. For example, no need to start developing from scratch. It is used to build Mobile-first sites.The latest version is Bootstrap 5.</p>
+                          
+                      </div>
+                         <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 scroll">
+                             <ul class="nav flex-column">
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">What is Bootstrap?</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">History</a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Bootstrap3 vs Bootstrap4 </a></button></li>
+                                <li class="nav-item"><button class="btn btn-outline-light text-left "><a class="nav-link text-dark pb-3" href="#">Uses of Bootstrap</a></button></li>   
+                    </ul>
+                </div>
+             </div>
 
+            
+          
 
 
 
