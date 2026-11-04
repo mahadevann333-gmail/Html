@@ -1,0 +1,4 @@
+SELECT * FROM `college library` WHERE price>400;
+SELECT * FROM `college library` WHERE genre IN ('History', 'Science', 'Fiction');
+SELECT * FROM `college library` WHERE title = 'The Great Gatsby';
+SELECT * FROM `college library` WHERE author != 'Dan Brown';

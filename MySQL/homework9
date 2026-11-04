@@ -1,0 +1,32 @@
+-- Employees table
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO `employees table` (id, name)
+VALUES
+(1, 'Anjali'),
+(2, 'Rohan'),
+(3, 'Meena');
+
+-- Department table
+SELECT * FROM department_table;
+
+INSERT INTO department_table (emp_id, department_name)
+VALUES
+(1, 'HR'),
+(2, 'IT'),
+(4, 'Finance');
+
+SELECT `employees table`.id, `employees table`.name,
+       department_table.department_name
+FROM `employees table`
+LEFT JOIN department_table
+ON `employees table`.id = department_table.emp_id;
+
+SELECT `employees table`.id, `employees table`.name,
+       department_table.department_name
+FROM `employees table`
+INNER JOIN department_table
+ON `employees table`.id = department_table.emp_id;

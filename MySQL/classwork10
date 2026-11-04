@@ -1,0 +1,2 @@
+CREATE TABLE students(student_id int PRIMARY KEY NOT NULL, name varchar(50) NOT NULL , email_id varchar(100) UNIQUE(email));
+CREATE TABLE courses(course_id int PRIMARY KEY NOT NULL , name varchar(50) NOT NULL )

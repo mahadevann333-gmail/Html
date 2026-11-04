@@ -1,0 +1,24 @@
+-- Books
+CREATE TABLE books ( book_id INT PRIMARY KEY, title VARCHAR(100) );
+INSERT INTO books (book_id, title) 
+VALUES 
+(1, 'The Alchemist'), 
+(2, 'The Power of Now'), 
+(3, 'Think and Grow Rich'), 
+(4, 'Clean Code');
+
+-- Borrowers table
+CREATE TABLE borrowers ( borrower_id INT PRIMARY KEY, name VARCHAR(100), book_id INT NULL, FOREIGN KEY (book_id) REFERENCES books(book_id) );
+INSERT INTO borrowers (borrower_id, name, book_id) VALUES 
+(101, 'Alice', 1), 
+(102, 'Bob', 2), 
+(103, 'Charlie', NULL);
+
+-- Query
+SELECT title , name 
+FROM books LEFT JOIN borrowers 
+ON books.book_id = borrowers.borrower_id;
+
+SELECT title , name FROM borrowers 
+LEFT JOIN books 
+ON books.book_id = borrowers.borrower_id;
