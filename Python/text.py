@@ -85,4 +85,3 @@ number_sum = number_int + number_str
 print("Sum of number_int and number_str:",number_sum)
 print("Data type of the sum:",type(number_sum))
 
-
